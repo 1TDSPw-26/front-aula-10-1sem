@@ -1,0 +1,26 @@
+/* Reset básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Reset básico */
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ul{
+    list-style: none;
+}
