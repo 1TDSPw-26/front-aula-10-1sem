@@ -1,0 +1,23 @@
+/* Reset básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Reset básico */
+
+#container{
+    margin:5px auto;
+    width:70%;
+    border: 2px solid black;
+}
+
+main{
+    width: 80%;
+    margin:0 auto;
+}
+
+section{
+    width: 90%;
+    margin:5% auto;
+}
