@@ -1,0 +1,25 @@
+
+.cabecalho{
+    height: 10vh;
+    width: 100vw;
+}
+
+.cabecalho__li{
+    display: inline-block;
+    margin: 1%;
+}
+
+.cabecalho__li__a{
+    display: inline-block;
+    text-align: center;
+    width: 10vw;
+    background-color: gray;
+    padding: 10%;
+    border-radius: 10%;
+
+}
+
+.cabecalho__li__a:hover{
+    background-color: black;
+    color: aliceblue;
+}
