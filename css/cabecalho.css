@@ -1,0 +1,9 @@
+.cabecalho{
+    height: 10vh;
+    width: 100vw;
+}
+
+.cabecalho__li{
+    display: inline-block;
+    margin: 1%;
+}
