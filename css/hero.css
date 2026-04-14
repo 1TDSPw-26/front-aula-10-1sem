@@ -1,0 +1,10 @@
+
+.hero{
+    position: relative;
+    background-color: blue;
+}
+
+.hero__container{
+    position: absolute;
+
+}
