@@ -6,8 +6,20 @@
 }
 /* Reset básico */
 
-/* font-size: 62.5%; */
 html{
-    font-size: 100%;
+    font-size: 62.5%; /* 10px */
+}
 
+body{
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+ul{
+    list-style: none;
 }
