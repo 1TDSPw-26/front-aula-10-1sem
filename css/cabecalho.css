@@ -14,10 +14,10 @@
     text-align: center;
     border-radius: 10px;
     padding: 3%;
-    background-color: rgb(1, 1, 146);
+    background-color: #a9a3a3;
 }
 
 .cabecalho__li__a:houver{
-    background-color: rgb(1, 1, 146);
+    background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }
