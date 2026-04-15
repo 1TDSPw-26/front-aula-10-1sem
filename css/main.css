@@ -1,7 +1,3 @@
-/* Reset básico */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/* Reset básico */
+@import url("./base.css");
+@import url("./cabecalho.css");
+@import url("./hero.css");
