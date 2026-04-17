@@ -1,22 +1,49 @@
 
 .hero{
-    position: relative;
-    background-color: blueviolet;
+    background-color: blue;
     width: 100%;
-    height: 100%;
-    padding: 10%;
+    height: 100vh;
+    color: var(--text-main);
 }
 
 .hero__container{
-    position:absolute;
     width: 100%;
     height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
-    background-image: linear-gradient(rgba(0,0,0,0.5)) , url("../img/sports.jpg");
+    background-image: linear-gradient(rgba(57, 45, 121, 0.5)) , url("../img/sports.jpg");
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem;
+}
+
+.hero__title{
+    font-size: calc(2.5rem,4vw,4rem);
+    text-align: center;
+}
+
+.hero__text{
+    text-align: justify;
+    margin: 2rem;
+    line-height: 5rem;
+    font-size: 2.5rem;
+}
+
+.hero__btn{
+    display: block;
+    margin: 0 auto;
+    width: 10%;
+    height: 7rem;
+    background-color: var(--primary);
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 10px;
+    padding: 2rem;
+    color: var(--text-main);
+    border: 0.2rem solid var(--text-main);
+}
+
+.hero__btn:hover{
+    background-color: var(--primary-hover);
 }
 
