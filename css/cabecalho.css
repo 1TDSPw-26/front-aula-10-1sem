@@ -2,6 +2,8 @@
 .cabecalho{
     height: auto;
     width: 100%;
+    position: absolute;
+    z-index: 10;
 }
 
 .cabecalho__li{
@@ -16,18 +18,19 @@
     background-color: gray;
     padding: 1rem;
     border-radius: 10px;
+    border: 0.2rem solid var(--text-main);
 
 }
 
 .cabecalho__a:hover{
-    background-color: black;
-    color: aliceblue;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
 }
 
 
  .cabecalho__a--active{
-    background-color: black;
-    color: aliceblue;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
  }
 
  .cabecalho__li--active{
