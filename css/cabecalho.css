@@ -2,6 +2,7 @@
 .cabecalho{
     width: 100%;
     height: auto;
+    position: absolute;
 }
 
 .cabecalho__li{
@@ -30,4 +31,5 @@
 
 .cabecalho__li--active{
    float: right;
+   margin-right: 5rem;
 }
