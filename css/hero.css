@@ -45,4 +45,5 @@
 
 .hero__btn:hover{
     background-color: var(--primary-hover);
+    color: var(--text-main);
 }
