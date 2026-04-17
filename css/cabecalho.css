@@ -1,25 +1,35 @@
 
 .cabecalho{
-    height: 10vh;
-    width: 100vw;
+    height: auto;
+    width: 100%;
 } 
 
 .cabecalho__li{
     display: inline-block;
-    margin: 1%;
+    margin: 0, 1rem;
 }
 
-.cabecalho__li__a{
+.cabecalho__a{
     display: inline-block;
-    width: 10vw;
-    background-color: #a9a9a9;
+    width: clamp(5%, 10rem, 150rem);
+    min-width: 10rem;
+    background-color: #a9a9a3;
     text-align: center;
-    width: 10vw;
-    padding: 10px;
-    border-radius: 10%;
+    padding: 2rem;
+    border-radius: 10px;
 }
 
 .cabecalho__li__a:hover{
-    background-color: black;
-    color: white;
+    background-color: #000000;
+    color: #fff;
+}
+
+.cabecalho__a--active{
+    background-color: #000000;
+    color: #fff;
+}
+
+.cabecalho__li--active{
+    float: right;
+    margin-right: 5rem;
 }
