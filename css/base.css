@@ -14,11 +14,12 @@
     --bg-panel:#242629; /* Fundo de base */
     --primary:#556b2f; /* Verde Oliva */
     --primary-hover:#6b8e23; /* Verde Oliva mais claro para o hover */
-
+    --bg-dark-med-gray:#a9a3a3;  /* Fundo botões */
     /* Cores de Texto */
     --text-main:#e0e0e0; /* Branco acinzentado */
     --text-muted:#a0a0a0; /* Textos menos importantes */
     --text-inv:#ffffff; /* Branco puro para contraste no verde do hover */
+
 }
 
 html{
@@ -35,7 +36,7 @@ body{
 
 a{
     text-decoration: none;
-    color: rgb(228, 9, 9);
+    color: black;
 }
 
 ul{
