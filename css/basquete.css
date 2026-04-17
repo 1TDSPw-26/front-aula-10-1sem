@@ -1,0 +1,39 @@
+
+.basquete{
+    width: 33.1vw;
+    display: inline-block;
+    background-color: var(--basquete-bg);
+    border: 0.6rem solid var(--basquete-border);
+    margin: 0;
+    padding: 0 4rem;
+}
+
+.basquete__title {
+    color: var(--basquete-title);
+    font-size: 5rem;
+    text-align: center;
+    margin: 4rem ;
+}
+
+.basquete__text {
+    font-size: 2rem;
+    text-align: justify;
+    margin-top: 1rem;
+    line-height: 3.5rem;
+}
+
+.basquete__btn {
+    display: block;
+    width: 10rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: var(--basquete-border);
+    color: var(--text-inv);
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.basquete__btn:hover {
+    background-color: var(--basquete-border);
+    color: var(--text-inv);
+}

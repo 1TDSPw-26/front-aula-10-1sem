@@ -19,6 +19,22 @@
     --text-main:#e0e0e0; /* Branco acinzentado */
     --text-muted:#a0a0a0; /* Textos menos importantes */
     --text-inv:#ffffff; /* Branco puro para contraste no verde do hover */
+
+    /* Cores do Basquete */
+    --basquete-border:#ff4500; /* Laranja vibrante */
+    --basquete-bg:#ff6347; /* Laranja Background */
+    --basquete-title:#4a1901; /* Laranja para o título do basquete */
+
+
+    /* Cores do Futebol */
+    --futebol-border:#44ff1e; /* Verde vibrante */
+    --futebol-bg:#87eb89; /* Verde claro Background */
+    --futebol-title:#1e7a1e; /* Verde para o título do futebol */
+
+    /* Cores do Volei */
+    --volei-border: #fbff03; /* Amarelo vibrante */
+    --volei-bg: #ffff8d; /* Amarelo claro Background */
+    --volei-title: #b3b300; /* Amarelo para o título do voleibol */
 }
 
 html{
@@ -30,6 +46,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100vw;
     height: 100vh;
+    background-color: #4a5076
 }
 
 main{
