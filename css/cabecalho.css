@@ -11,10 +11,7 @@
 
 .cabecalho__a{
     display: inline-block;
-    width: clamp(5%, 10rem, 150rem);
-    min-width: 10rem;
     background-color: #a9a9a3;
-    text-align: center;
     padding: 2rem;
     border-radius: 10px;
 }
