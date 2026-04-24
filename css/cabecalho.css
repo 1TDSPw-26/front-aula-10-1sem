@@ -13,7 +13,6 @@
 
 .cabecalho__a{
     display: inline-block;
-    text-align: center;
     width: clamp(15rem,8vw,20rem);
     background-color: var(--bg-dark-med-gray);
     padding:1rem;
@@ -34,4 +33,9 @@
 .cabecalho__li--active{
    float: right;
    margin-right: 5rem;
+    margin-right: 1%;
+}
+
+.cabecalho__li_a{
+    display: inline-block;
 }
