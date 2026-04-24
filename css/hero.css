@@ -44,7 +44,7 @@
     padding: 2rem;
     color: var(--text-main);
     border: 0.2rem solid var(--text-main);
-    background-color: var(--primary);
+    background-color:var(--bg-dark-med-gray);
 
 }
 
