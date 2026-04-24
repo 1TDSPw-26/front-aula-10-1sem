@@ -36,3 +36,20 @@
  .cabecalho__li--active{
     float: right;
  }
+
+ /*
+ como é um breackpoint:
+ ex: @media (max-width: 768px){
+        .cabecalho__li{
+            display: block;
+            margin: 0.5rem 0;
+        }
+        .cabecalho__a{
+            width: 100%;
+        }
+        .cabecalho__li--active{
+            float: none;
+            margin-right: 0;
+        }
+     }
+ */
