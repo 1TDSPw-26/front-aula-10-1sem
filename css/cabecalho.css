@@ -27,7 +27,6 @@
 
 .cabecalho__a--active{
     background-color: #000000;
-    float: right;
     color: var(--text-main);
     
 }
@@ -36,3 +35,35 @@
     float: right;
     margin-right: 5rem;
 }
+
+/* media query diretiva do css que possibilita os brakes points */
+/* como e um breakepoint: */
+@media (min-width: 320px){
+
+    .cabecalho{
+        position: static;
+
+    }
+    .cabecalho__ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cabecalho__li--active{
+        float: right;
+        
+    }
+
+    .cabecalho__li{
+        margin: 0.1rem 0.5rem;
+    }
+
+    .cabecalho__a{
+        width: clamp(7rem,8vw,10rem);
+        padding: 1rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+}
+ 
+
