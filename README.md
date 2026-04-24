@@ -1,2 +1,2 @@
-# front-aula-05-1sem
-@media-queries / FlexBOX / GridLayout
+# front-aula-04-sem
+CSS3 - Responsividade / @media-queries
