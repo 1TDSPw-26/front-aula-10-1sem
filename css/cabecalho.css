@@ -53,3 +53,29 @@
         }
      }
  */
+@media (min-width: 320px) {
+    .cabecalho{
+        position: static;
+        
+    }
+    
+    .cabecalho__ul{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cabecalho__a--active{
+        float: none;
+    }
+
+    .cabecalho__li{
+        margin: 0.1rem 0.5rem;
+    }
+
+    .cabecalho__a{
+        width: clamp(7rem, 2vw, 10rem);
+        padding: 1rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+}
