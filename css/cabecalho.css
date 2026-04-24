@@ -1,24 +1,37 @@
 
 .cabecalho{
-    height: 10vh;
-    width: 100vw;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 10;
 }
 
 .cabecalho__li{
     display: inline-block;
-    margin: 1%;
+    margin: 0.5rem 2rem;
 }
 
-.cabecalho__li__a{
+.cabecalho__a{
     display: inline-block;
     text-align: center;
-    width: 10vw;
-    background-color: #a9a3a3;
-    padding:10%;
-    border-radius: 10%;
+    width: clamp(15rem,8vw,20rem);
+    background-color: var(--bg-dark-med-gray);
+    padding:1rem;
+    border-radius: 10px;
+    border: 0.2rem solid var(--text-main);
 }
 
-.cabecalho__li__a:hover {
+.cabecalho__a:hover {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+}
+
+.cabecalho__a--active{
     background-color: #000000;
-    color: #fff;
+    color: var(--text-main);
+}
+
+.cabecalho__li--active{
+   float: right;
+   margin-right: 5rem;
 }
