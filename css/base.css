@@ -1,0 +1,49 @@
+/* Reset básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-weight: normal;
+}
+/* Reset básico */
+
+:root{
+    /* Cores de Fundo e Identidade */
+    --bg-dark:#1a1b1c;  /* Fundo quase preto */
+    --bg-dark-med:#4f5357;  /* Fundo quase preto */
+    --bg-dark-med-gray:#a9a3a3;  /* Fundo botões */
+    --bg-panel:#242629; /* Fundo de base */
+    --primary:#556b2f; /* Verde Oliva */
+    --primary-hover:#6b8e23; /* Verde Oliva mais claro para o hover */
+
+
+    /* Cores de Texto */
+    --text-main:#e0e0e0; /* Branco acinzentado */
+    --text-muted:#a0a0a0; /* Textos menos importantes */
+    --text-inv:#ffffff; /* Branco puro para contraste no verde do hover */
+}
+
+html{
+    font-size: 62.5%; /* 10px */
+}
+
+body{
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+ul{
+    list-style: none;
+}
