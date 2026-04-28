@@ -10,31 +10,16 @@
     /* Cores de Fundo e Identidade */
     --bg-dark:#1a1b1c;  /* Fundo quase preto */
     --bg-dark-med:#4f5357;  /* Fundo quase preto */
-    --bg-dark-med-grey:#a9a3a3;  /* Fundo botoes */
+    --bg-dark-med-gray:#a9a3a3;  /* Fundo botões */
     --bg-panel:#242629; /* Fundo de base */
     --primary:#556b2f; /* Verde Oliva */
     --primary-hover:#6b8e23; /* Verde Oliva mais claro para o hover */
+
 
     /* Cores de Texto */
     --text-main:#e0e0e0; /* Branco acinzentado */
     --text-muted:#a0a0a0; /* Textos menos importantes */
     --text-inv:#ffffff; /* Branco puro para contraste no verde do hover */
-
-    /* Cores do Basquete */
-    --basquete-border:#ff4500; /* Laranja vibrante */
-    --basquete-bg:#ff6347; /* Laranja Background */
-    --basquete-title:#4a1901; /* Laranja para o título do basquete */
-
-
-    /* Cores do Futebol */
-    --futebol-border:#44ff1e; /* Verde vibrante */
-    --futebol-bg:#87eb89; /* Verde claro Background */
-    --futebol-title:#1e7a1e; /* Verde para o título do futebol */
-
-    /* Cores do Volei */
-    --volei-border: #fbff03; /* Amarelo vibrante */
-    --volei-bg: #ffff8d; /* Amarelo claro Background */
-    --volei-title: #b3b300; /* Amarelo para o título do voleibol */
 }
 
 html{
