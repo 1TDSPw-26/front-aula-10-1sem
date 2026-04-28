@@ -1,30 +1,33 @@
 .hero{
-    background-color: aqua;
+    background-color: var(--bg-dark);
     width: 100%;
-    height: 100%;
-    color: #fff;
+    height: 100vh;
+    color: var(--text-main);
 }
 
 .hero__container{
     width: 100%;
     height: 100%;
-    
-    background-image: linear-gradient(rgba(0,0,0, 0.5)) , url(../img/sports-tools.jpg);
+    background-image: linear-gradient( rgba(51, 51, 88, 0.7)) , url("../img/img-01-fundo-hero.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .hero__title{
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(2.5rem,5vw,4rem);
     text-align: center;
 }
 
 .hero__text{
     text-align: justify;
-    margin: 2rem;
-    line-height: 5rem;
+    margin: 1.5rem;
+    line-height: 4.5rem;
     font-size: 2.5rem;
 }
 
@@ -39,11 +42,10 @@
     text-align: center;
     border-radius: 10px;
     padding: 2rem;
-    color: var(--text-main);
     border: 0.2rem solid var(--text-main);
 }
 
 .hero__btn:hover{
-    background-color: var(--bg-dark);
-    color: var(--text-main);
+        background-color: var(--bg-dark);
+        color: var(--text-main);
 }
