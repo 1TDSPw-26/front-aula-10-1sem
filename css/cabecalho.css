@@ -68,15 +68,17 @@
   
 */
 
-@media (min-width: 320px){
+@media (min-width: 320px) and (max-width: 425px) {
 
     .cabecalho{
     position: static;
+    background-color: #445470;
 }
 
    .cabecalho__ul{
     display: flex;
     flex-direction: row;
+    justify-content: center;
    
 }
 
@@ -92,7 +94,7 @@
     width: clamp(7rem,8vw,10rem);
     padding:1rem;
     font-size: 1.2rem;
-    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 }
