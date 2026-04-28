@@ -38,10 +38,11 @@
 
 /* media query diretiva do css que possibilita os brakes points */
 /* como e um breakepoint: */
-@media (min-width: 320px){
+@media (min-width: 320px) and (max-width: 425px){
 
     .cabecalho{
         position: static;
+        background-color: #445470;
 
     }
     .cabecalho__ul{
