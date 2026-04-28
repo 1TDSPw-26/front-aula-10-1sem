@@ -68,10 +68,11 @@
   
 */
 
-@media (min-width: 320px){
+@media (min-width: 320px) and (max-width: 720px) {
 
     .cabecalho{
     position: static;
+    background-color: #445470;
 }
 
    .cabecalho__ul{
