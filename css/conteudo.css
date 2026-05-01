@@ -8,17 +8,20 @@
 }
 
 .conteudo__sec{
+    position: relative;
     background-color: #244570;
     color: #fff;
     border-radius: 5px;
-    height: 100%;
-
-    transition:background-color 0.3s ease-in;
+    box-shadow: 0 0 0 none;
+    transition:background-color 0.5s ease-in, color 0.5s ease-in, box-shadow 0.5s ease-in, position 0.5s ease-in;
 }
 
 .conteudo__sec:hover{
     background-color: #fff;
+    box-shadow: 5px 5px 20px #000;
     color: #244570;
+    position: absolute;
+    z-index: 10000;
 }
     
 .conteudo__tit{
