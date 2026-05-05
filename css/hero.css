@@ -5,12 +5,20 @@
   color: var(--text-main);
 }
 
+.hero__container--basquete {
+  background-image: linear-gradient(rgba(51, 51, 88, 0.7)),
+    url("../img/sl_022820_28430_12.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .hero__container {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(rgba(51, 51, 88, 0.7)),
     url("../img/sports-tools.jpg");
-  background-position: center;
+    background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 2rem;
