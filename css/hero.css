@@ -14,11 +14,11 @@
     min-height: 100%;
 }
 
-.hero__container--basquete{
+.hero__container--futebol{
     background-image: linear-gradient(rgba(0,0,0,0.5)), url("../img/img-02-fundo-hero-basquete.jpg");
 }
 
-.hero__container--basquete{
+.hero__container--volei{
     background-image: linear-gradient(rgba(0,0,0,0.5)), url("../img/img-02-fundo-hero-basquete.jpg");
 }
 
