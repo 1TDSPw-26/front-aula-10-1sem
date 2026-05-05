@@ -6,6 +6,22 @@
     color: var(--text-main);
 }
 
+.hero__container--basquete{
+    background-image: linear-gradient(rgba(0,0,0,0.5)), url("../img/img-02-fundo-hero-basquete.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+}
+
+.hero__container--basquete{
+    background-image: linear-gradient(rgba(0,0,0,0.5)), url("../img/img-02-fundo-hero-basquete.jpg");
+}
+
+.hero__container--basquete{
+    background-image: linear-gradient(rgba(0,0,0,0.5)), url("../img/img-02-fundo-hero-basquete.jpg");
+}
+
 .hero__container{
     
     width: 100%;
