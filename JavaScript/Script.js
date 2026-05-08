@@ -29,15 +29,30 @@ let nr2 = "3";
 console.log(nr1 , parseInt(nr2)); //resultado: 2 3
 console.log(nr1 + parseInt(nr2)); //resultado: 5
 
-//Capturando dados do campo de email e senha
-const email = document.getElementById("idEmail");
-const senha = document.getElementById("idSenha");
 
 
 const botao = document.getElementById("btnEntrar");
 
-botao.addEventListener("click", function(){
-    console.log(typeof email.value);
-    console.log(typeof senha.value);
-     console.log( parseInt(email.value) + parseInt(senha.value) );
+botao.addEventListener("click", function(e){
+    e.preventDefault();
+    //Capturando dados do campo de email e senha
+    const email = document.getElementById("idEmail");
+    const senha = document.getElementById("idSenha");
+    
+    //Declarando um objeto:
+    let usuario = {
+        email: email.value,
+        senha: senha.value
+    }
+    
+    console.log( usuario.email );
+    console.log( usuario.senha );
 }); 
+
+
+
+
+
+
+
+
