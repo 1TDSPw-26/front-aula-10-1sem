@@ -1,33 +1,17 @@
+//Criando uma lista de objetos:
+const usuarios = [
+    {id: 1, email:"email@email.com",senha:"12345",nome:"José das Couves",avatar : "https://placehold.co/100x100/d1d5db/111827.png?text=Mobile%20Preview&font=inter"},
+    {id: 2, email:"nadir@email.com",senha:"12345",nome:"Nadir das Batatas",avatar : "https://placehold.co/100x100/d1d5db/111827.png?text=Mobile%20Preview&font=inter"},
+    {id: 3, email:"joel@email.com",senha:"12345",nome:"Joel da Cândida",avatar : "https://placehold.co/100x100/d1d5db/111827.png?text=Mobile%20Preview&font=inter"},
+    {id: 4, email:"tonho@email.com",senha:"12345",nome:"Antonio das Alfaces",avatar : "https://placehold.co/100x100/d1d5db/111827.png?text=Mobile%20Preview&font=inter"},
+    {id: 5, email:"jo@email.com",senha:"12345",nome:"Jaquim das Jacas",avatar : "https://placehold.co/100x100/d1d5db/111827.png?text=Mobile%20Preview&font=inter"},
+];
 
-//Declarando variaveis
+//Compare os dado do form contra a lista de usuários
+//Utilize estruura de repetição
+//Imprima a lista de usuários.
 
-//Declarando com var
-// var nome = "Alê";
-// console.log(nome);
-// //Declarando com let
-// let sobrenome = "Silva";
-// console.log(sobrenome);
-// //Declarando com const
-// const PI = 3.14;
-// console.log(PI);
 
-//Diferença entre var e let
-// var nome = "Alê";
-// let sobrenome = "Silva";
-
-// if(true){
-//     //redeclarando as variaveis:
-//     var nome = "João";
-//     let sobrenome = "Souza";
-// }
-
-// console.log(nome);
-// console.log(sobrenome);
-
-let nr1 = 2;
-let nr2 = "3";
-console.log(nr1 , parseInt(nr2)); //resultado: 2 3
-console.log(nr1 + parseInt(nr2)); //resultado: 5
 
 
 
@@ -49,7 +33,44 @@ botao.addEventListener("click", function(e){
     console.log( usuario.senha );
 
 
+    const userDoBanco = {
+        email  : "email@email.com",
+        senha  : "12345",
+        nome   : "José das Couves",
+        avatar : "https://placehold.co/100x100/d1d5db/111827.png?text=Mobile%20Preview&font=inter"
+    }
+
     //Validação de dados do usuário
+
+    try {
+        if(usuario !== null){
+            if( (usuario.email === userDoBanco.email) && (usuario.senha === userDoBanco.senha) ){
+                    alert("Login realizado com sucesso!");
+
+                    //Informando o usuário que ele será redirecionado!
+                    const divMsg = document.getElementById("msg");
+
+                    //Adicionando a msg em um <p></p> através de innerHTML
+                    divMsg.innerHTML = "<p>Você será redirecionado em 5 segundo.....</p>"
+
+                    setTimeout(function(){
+                        //Redirecionando o usuário para a página de inicial!
+                        window.location.href = "../index.html"; 
+                    },5000);
+            }else{
+                throw new Error("Email ou senha incorretos!");
+            }
+        }else{
+            throw new Error("Usuário não encontrado!");
+        }
+        
+    } catch (error) {
+        console.error(error);
+        alert(error);
+    }
+
+
+
     //Crie um novo objeto com as propriedades email e senha.
     //Compare contra os dados do usuário.
     //Crie uma validação para os campos de e-mail e senha.
