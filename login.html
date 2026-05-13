@@ -9,7 +9,7 @@
         <script src="./js/script.js" defer></script>
 
     </head>
-    
+     
     <body>
         <header class="cabecalho">
             <nav class="cabecalho__nav">
@@ -28,6 +28,8 @@
                 <div class="hero__container">
                     <h1 class="hero__title">CONTROLE DE ACESSO</h1>
                     
+                    <div id="msg"></div>
+
                     <form action="#" method="GET">
                         <input type="hidden" value="oi" name="msg">
                         <fieldset>
@@ -42,7 +44,8 @@
                     </div>
                     <div>
 
-                        <button type="submit" id="btnEntrar" onclick="console.log('Olá Mundo!')">Entrar</button>
+                        <button value="OK" type="submit" id="btnEntrar">Entrar</button>
+                        <input type="submit" value="OK">
                     </div>
                 </fieldset>
             </form>
@@ -52,41 +55,10 @@
         </div>
       </section>
 
-      <div class="conteudo__container">
-        
-        <section class="conteudo__sec">
-          <h2 class="conteudo__tit">Basquete</h2>
-          <p class="conteudo__txt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-            accusamus, perspiciatis fugiat vitae eius deserunt velit reiciendis,
-            quia delectus sit veritatis enim nobis neque maiores dicta corrupti
-            magnam labore fuga quo itaque asperiores fugit quam.
-          </p>
-          <a class="conteudo__btn" href="./paginas/basquete.html">mais...</a>
-        </section>
-
-        <section class="conteudo__sec">
-          <h2 class="conteudo__tit">Futebol</h2>
-          <p class="conteudo__txt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quas! Excepturi, quos debitis. Illum enim quisquam excepturi officia quod nulla, nesciunt illo sit veniam facilis dolores itaque eos quidem cum natus recusandae sunt nihil reprehenderit deserunt, tenetur repellat amet, incidunt officiis ullam. Voluptatum, officia eveniet?
-          </p>
-          <a class="conteudo__btn" href="./paginas/futebol.html">mais...</a>
-        </section>
-
-        <section class="conteudo__sec">
-          <h2 class="conteudo__tit">Volei</h2>
-          <p class="conteudo__txt">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nesciunt quis vero porro, mollitia eos delectus iusto error cupiditate assumenda ducimus perspiciatis blanditiis rem excepturi eaque. Tempore ipsam dolorem natus optio, iure nesciunt nihil, quod, odit similique a tenetur! Placeat quas facere a libero quibusdam.
-          </p>
-          <a class="conteudo__btn" href="./paginas/volei.html">mais...</a>
-        </section>
-
-      </div>
-
     </main>
-
     <footer>
       <p>PCD - 2026 &copy; Todos os direitos reservados</p>
     </footer>
+
   </body>
 </html>
