@@ -79,11 +79,3 @@ botao.addEventListener("click", function(e){
 
 
 }); 
-
-
-
-
-
-
-
-
