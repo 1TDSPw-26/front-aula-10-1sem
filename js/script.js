@@ -1,20 +1,33 @@
-//Criando uma lista de objetos:
+
+//Criando uma lista de objetos
 const usuarios = [
-    {id: 1, email:"email@email.com",senha:"12345",nome:"José das Couves",avatar : "https://placehold.co/100x100/d1d5db/111827.png?text=Mobile%20Preview&font=inter"},
+    {id: 1, email:"email@email.com",senha:"12345",nome:"José das Couves",avatar:"https://placehold.co/100x100/d1d5db/111827.png?text=Mobile%20Preview&font=inter"},
     {id: 2, email:"nadir@email.com",senha:"12345",nome:"Nadir das Batatas",avatar : "https://placehold.co/100x100/d1d5db/111827.png?text=Mobile%20Preview&font=inter"},
     {id: 3, email:"joel@email.com",senha:"12345",nome:"Joel da Cândida",avatar : "https://placehold.co/100x100/d1d5db/111827.png?text=Mobile%20Preview&font=inter"},
     {id: 4, email:"tonho@email.com",senha:"12345",nome:"Antonio das Alfaces",avatar : "https://placehold.co/100x100/d1d5db/111827.png?text=Mobile%20Preview&font=inter"},
     {id: 5, email:"jo@email.com",senha:"12345",nome:"Jaquim das Jacas",avatar : "https://placehold.co/100x100/d1d5db/111827.png?text=Mobile%20Preview&font=inter"},
-];
+]
 
+let frase = "Estou com muito sono!";
+console.log(frase.length);
 
+//for(let x = 0; x < frase.length; x++){
+  //  if(frase[x]=== "o")
+    //console.log(frase[x]);
+//}
 
+for (let index = 0; index < usuarios.length; index++){
+    console.log(usuarios[index].id,usuarios[index].nome);
 
+}
 
 const botao = document.getElementById("btnEntrar");
 
 botao.addEventListener("click", function(e){
+    console.log(this.textContent);
     e.preventDefault();
+
+
     //Capturando dados do campo de email e senha
     const email = document.getElementById("idEmail");
     const senha = document.getElementById("idSenha");
@@ -47,22 +60,22 @@ botao.addEventListener("click", function(e){
                     const divMsg = document.getElementById("msg");
 
                     //Adicionando a msg em um <p></p> através de innerHTML
-                    divMsg.innerHTML = "<p>Você será redirecionado em 5 segundo.....</p>"
+                    divMsg.innerHTML = "<p>Você será redirecionado em 5 segundos....</p>"
 
                     setTimeout(function(){
-                        //Redirecionando o usuário para a página de inicial!
-                        window.location.href = "../index.html"; 
+                        //Redirecionando o usuário para a pagina inicial!
+                        window.location.href= "../index.html";
                     },5000);
             }else{
-                throw new Error("Email ou senha incorretos!");
+                throw new Error("Email ou senha incorretos!")
             }
         }else{
-            throw new Error("Usuário não encontrado!");
+            throw new Error("Usuário não localizado!")
         }
         
     } catch (error) {
         console.error(error);
-        alert(error);
+        alert(Error);
     }
 
 
@@ -76,10 +89,9 @@ botao.addEventListener("click", function(e){
 
 }); 
 
+//function validar(){
+    //console.log("Não execute");
+//}
 
-
-
-
-
-
-
+//const validar = (a,b) => a+b;
+//console.log(validar(2,2));
