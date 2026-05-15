@@ -7,18 +7,34 @@ const usuarios = [
     {id: 5, email:"jo@email.com",senha:"12345",nome:"Jaquim das Jacas",avatar : "https://placehold.co/100x100/d1d5db/111827.png?text=Mobile%20Preview&font=inter"},
 ];
 
+//O que é uma STRING?
+// let frase = "Estou com muito SONO!";
+// console.log(frase.length);
+
+// for(let x = 0; x < frase.length; x++){
+//     if(frase[x].toLowerCase() === "o")
+//         console.log(x,frase[x]);
+// }
+
+for (let index = 0; index < usuarios.length; index++) {
+        console.log(usuarios[index].id,usuarios[index].nome);
+}
+
+ 
+
+
+
+
 //Compare os dado do form contra a lista de usuários
 //Utilize estruura de repetição
 //Imprima a lista de usuários.
 
+// const botao = document.getElementById("btnEntrar");
+const botao = document.querySelector("#btnEntrar");
 
-
-
-
-const botao = document.getElementById("btnEntrar");
-
-botao.addEventListener("click", function(e){
+botao.addEventListener("click", (e)=>{
     e.preventDefault();
+
     //Capturando dados do campo de email e senha
     const email = document.getElementById("idEmail");
     const senha = document.getElementById("idSenha");
@@ -69,13 +85,27 @@ botao.addEventListener("click", function(e){
         alert(error);
     }
 
-
-
-    //Crie um novo objeto com as propriedades email e senha.
-    //Compare contra os dados do usuário.
-    //Crie uma validação para os campos de e-mail e senha.
-    //Se a validacão for bem sucedida, exibir mensagem de sucesso, caso contrário, exiba mensagem de erro.
-
-
-
+    
 }); 
+
+// function validar(){
+//     //Função Tradicional!
+//     console.log("NÃO EXECUTE!!");
+// }
+// function validar(...args){
+//     let resultado = args[0] + args[1] + args[2];
+//     return resultado;
+// }
+
+// console.log(validar(2,2,4));
+
+// const validar = (a,b) => a+b;
+// console.log(validar(2,2));
+
+// const validar = (a,b) =>{
+//     return a+b;
+// }
+// console.log(validar(2,2));
+
+
+    // Tente realizar a validação da lista contra o objeto que recupera dos dados do form.
