@@ -8,3 +8,11 @@ input:invalid:not(:placeholder-shown){
     border: 2px solid #ff0000;
 }
 
+
+#btnEntrar{
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+    
+}
+
