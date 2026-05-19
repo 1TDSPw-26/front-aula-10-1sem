@@ -9,7 +9,7 @@
         <script src="./js/script.js" defer></script>
 
     </head>
-     
+      
     <body>
         <header class="cabecalho">
             <nav class="cabecalho__nav">
@@ -27,12 +27,16 @@
             <section class="hero">
                 <div class="hero__container">
                     <h1 class="hero__title">CONTROLE DE ACESSO</h1>
-                    
+
+                    <div id="msg">
+                        
+                    </div>
+
                     <form action="#" method="GET">
                         <input type="hidden" value="oi" name="msg">
                         <fieldset>
                             <legend>LOGIN</legend>
-                    <div>
+                    <div> 
                         <label for="idEmail">Email</label>
                         <input type="email" name="email" id="idEmail" placeholder="Digite seu email" required minlength="15" maxlength="150" oninvalid="setCustomValidity('Errei')" autocomplete="current-password">
                     </div>
