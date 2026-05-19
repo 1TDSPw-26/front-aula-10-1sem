@@ -60,26 +60,39 @@ botao.addEventListener("click", (e)=>{
 
     try {
         if(usuario !== null){
-            if( (usuario.email === userDoBanco.email) && (usuario.senha === userDoBanco.senha) ){
-                    alert("Login realizado com sucesso!");
 
-                    //Informando o usuário que ele será redirecionado!
-                    const divMsg = document.getElementById("msg");
+            for(let x = 0 ; x < usuarios.length ; x++){
 
-                    //Adicionando a msg em um <p></p> através de innerHTML
-                    divMsg.innerHTML = "<p>Você será redirecionado em 5 segundo.....</p>"
+                console.log(usuarios[x].nome);
+                console.log(usuarios[x].email);
+                if( (usuario.email === userDoBanco.email) && (usuario.senha === userDoBanco.senha) ){
+                        alert("Login realizado com sucesso!");
+            
+                        //Informando o usuário que ele será redirecionado!
+                        const divMsg = document.getElementById("msg");
+            
+                        //Adicionando a msg em um <p></p> através de innerHTML
+                        divMsg.innerHTML = "<p>Você será redirecionado em 5 segundo.....</p>"
+            
+                        setTimeout(function(){
+                            //Redirecionando o usuário para a página de inicial!
+                            window.location.href = "../index.html"; 
+                        },5000);
 
-                    setTimeout(function(){
-                        //Redirecionando o usuário para a página de inicial!
-                        window.location.href = "../index.html"; 
-                    },5000);
-            }else{
+                        return;
+                        
+                    }
+                    
+                    
+                }
+
                 throw new Error("Email ou senha incorretos!");
-            }
-        }else{
-            throw new Error("Usuário não encontrado!");
-        }
-        
+
+            }else{
+    }else{
+        throw new Error("Usuário não encontrado!");
+    }
+    
     } catch (error) {
         console.error(error);
         alert(error);
