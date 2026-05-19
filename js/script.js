@@ -23,13 +23,60 @@
 // console.log(nome);
 // console.log(sobrenome);
 
-let nr1 = 2;
-let nr2 = "3";
-console.log(nr1, parseInt(nr2)); //resultado: 2 3
-console.log(nr1 + parseInt(nr2)); //resultado: 5
+const usuarios = [
+  {
+    id: 1,
+    email: "email@email.com",
+    senha: "12345",
+    nome: "José das Couves",
+    avatar:
+      "https://placehold.co/100x100/d1d5db/111827.png?text=Mobile%20Preview&font=inter",
+  },
+  {
+    id: 2,
+    email: "nadir@email.com",
+    senha: "12345",
+    nome: "Nadir das Batatas",
+    avatar:
+      "https://placehold.co/100x100/d1d5db/111827.png?text=Mobile%20Preview&font=inter",
+  },
+  {
+    id: 3,
+    email: "joel@email.com",
+    senha: "12345",
+    nome: "Joel da Cândida",
+    avatar:
+      "https://placehold.co/100x100/d1d5db/111827.png?text=Mobile%20Preview&font=inter",
+  },
+  {
+    id: 4,
+    email: "tonho@email.com",
+    senha: "12345",
+    nome: "Antonio das Alfaces",
+    avatar:
+      "https://placehold.co/100x100/d1d5db/111827.png?text=Mobile%20Preview&font=inter",
+  },
+  {
+    id: 5,
+    email: "jo@email.com",
+    senha: "12345",
+    nome: "Jaquim das Jacas",
+    avatar:
+      "https://placehold.co/100x100/d1d5db/111827.png?text=Mobile%20Preview&font=inter",
+  },
+];
 
-const botao = document.getElementById("btnEntrar");
+for (let index = 0; index < usuarios.length; index++) {
+  console.log(usuarios[index].id, usuarios[index].nome)
+  
+}
 
+// let nr1 = 2;
+// let nr2 = "3";
+// console.log(nr1, parseInt(nr2)); //resultado: 2 3
+// console.log(nr1 + parseInt(nr2)); //resultado: 5
+
+const botao = document.querySelector("#btnEntrar")
 // console.log(botao.value);
 
 botao.addEventListener("click", function (e) {
@@ -65,8 +112,8 @@ botao.addEventListener("click", function (e) {
   try {
     if (usuario !== null) {
       if (
-        (usuario.email === userDoBanco.email) &&
-        (usuario.senha === userDoBanco.senha)
+        usuario.email === userDoBanco.email &&
+        usuario.senha === userDoBanco.senha
       ) {
         alert("Login realizado com sucesso.");
 
