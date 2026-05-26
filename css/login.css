@@ -1,0 +1,90 @@
+/* centralizei a pagina */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f6f9; /* Um fundo neutro e moderno */
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+form {
+    width: 100%;
+    max-width: 420px; /* pra nao esticar muito */
+    padding: 15px;
+}
+
+/* deixando a caixa de texto do login bonitinha (sem usar br ne rsrs)*/
+fieldset {
+    border: 1px solid #e2e8f0;
+    border-radius: 20px; /* deixa as bordas redondinhas*/
+    padding: 35px 30px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); /* esse aqui vai fingir que ta profundo  */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* vai deixar todos os espaços iguais */
+}
+
+/* Texto "login" */
+legend {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #1a202c;
+    padding: 0 15px;
+    letter-spacing: 1px;
+}
+
+/* alinhando os inputs (onde o usuario coloca os dados dele) */
+fieldset div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+/* Customizando os inputs */
+input[type="email"],
+input[type="password"] {
+    padding: 12px 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px; /* deixando os inputs redondo pra ficar parecido com os do fieldset */
+    font-size: 0.95rem;
+    color: #334155;
+    background-color: #f8fafc;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+/* da tipo um efeito de foco quando o usuario clica */
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #3b82f6;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* Botão de Entrar */
+#btnEntrar {
+    background-color: #3b82f6;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+}
+
+#btnEntrar:hover {
+    background-color: #2563eb;
+}
+
